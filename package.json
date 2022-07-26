@@ -1,0 +1,33 @@
+{
+  "name": "academy-project",
+  "version": "1.0.0",
+  "description": "dave_test_install",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dave-t-MT/luna-test.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "dave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dave-t-MT/luna-test/issues"
+  },
+  "homepage": "https://github.com/dave-t-MT/luna-test#readme",
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "sass": "^1.54.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "govuk-frontend": "^4.2.0"
+  }
+}
