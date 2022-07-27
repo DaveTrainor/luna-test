@@ -1,17 +1,24 @@
-console.log('hello, you alright')
+console.log(__dirname)
 const express = require('express')
+const path = require ('path')
 const app = express()
 const port = 3000
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '/accordion.html'))
+})
+
+app.use('/assets', express.static(path.join(__dirname, '../public')))
+
+app.listen(port, () => {
+  console.log(`App running on port ${port}`)
+})
+
+
+/* Version before express:
 const http = require('http');
 const fs = require('fs');
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`)
-// })
 
 fs.readFile('./accordion.html', function (err, html) {
 
@@ -23,3 +30,6 @@ fs.readFile('./accordion.html', function (err, html) {
         response.end();  
     }).listen(port);
 });
+*/
+
+

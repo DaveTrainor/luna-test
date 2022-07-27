@@ -12,6 +12,10 @@
 - fix path problems in node_modules/sass/package.json
 - add "scss" to package.json
 
+- following https://dev.to/elvelive/setting-up-sass-in-an-express-app-jk4:
+- add nodemon to restart app after changes made
+
+
 ## Questions: 
 - 
 - 
