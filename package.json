@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cypress run",
     "cypress:open": "cypress open",
-    "start": "node index.js"
+    "start": "node index.js",
+    "scss": "sass --watch main.scss styles.css"
   },
   "repository": {
     "type": "git",
